@@ -1,0 +1,154 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Weather</title>
+            <link rel="icon" type="image/png" href="./assets/images/cloudy.png">
+            <meta name="description" content="Weather conditions can range from sunny and clear skies to cloudy, rainy, stormy, or snowy. Severe weather events like hurricanes, tornadoes, or blizzards can also occur, impacting safety and daily activities. Understanding the weather is essential for planning, agriculture, transportation, and personal comfort.">
+            <meta name="keywords" content="cloudy, rainy, stormy,snowy,sunny">
+            <meta property="og:image" content="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png">
+            <meta property="og:title" content="Weather">
+            <link rel="stylesheet" href="./assets/css/all.min.css">
+            <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="./assets/css/style.css">
+        </head>
+        <body>
+                <header>
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <a class="home-logo" href="./index.html">
+                            <img src="./assets/images/logo.png" alt="picture weather" class="me-2">
+                            <div class="text_weather text-white d-inline-block">
+                                <h1 class="h5 text-white " style=" font-size: 1rem;">
+                                    Weather
+                                </h1>
+                                <small>tagline goes here</small>
+                            </div>
+                        </a>
+                        <div class="sub-menu">
+                            <button type="button" class="toggle">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <ul class="menu">
+                                <li class="item">
+                                    <a class="home" href="./index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="item"><a href="">News</a></li>
+                                <li class="item"><a href="">Live cameras</a></li>
+                                <li class="item"><a href="">Photos</a></li>
+                                <li class="item"><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <div class="mobile-nav" style="display: none;">
+                        <ul class="menu-mob">
+                            <li class="item">
+                                <a class="home-mob" href="./index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="item"><a href="">News</a></li>
+                            <li class="item"><a href="">Live cameras</a></li>
+                            <li class="item"><a href="">Photos</a></li>
+                            <li class="item"><a href="">Contact</a></li>
+                        </ul>
+        
+                    </div>
+                </header>
+               
+                <section class="weather">
+                    <div class="container">
+                        <form  class="sub" style="position: relative; margin-bottom: 30px;">
+        
+                            <input class="text" type="text" placeholder="Find your Location..." id="inputFind">
+                            <input type="button" value="Find" class="button" id="btnFind">
+                            </form>
+                    </div>
+                </section>
+                <!-- cards -->
+                <div class="container" style="transform: translateY(-110px);">
+                    <div class="row" id="body">
+                        <div class=" col-md-4  col1">
+                            <div class="title d-flex justify-content-between align-items-center px-3 pt-2">
+                               <p class="m-0">Tuesday</p>
+                               <p class="m-0"> 8October</p>
+                            </div>
+                            <div class="info px-3 me-3 ">
+                               <p class="country">Cairo</p>
+                               <p class="d-flex align-items-end">
+                                  <span>29°c</span>
+                                  <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="" class="ms-4">
+                               </p>
+                               <p class="status">Clear</p>
+                               <div class="icons d-flex align-items-center pb-2">
+                                  <div class="d-flex align-items-start pe-4">
+                                     <i class="fa-solid fa-umbrella pe-1 fs-5"></i> 
+                                     <p>20%</p>
+                                  </div>
+                                  <div class="d-flex align-items-start pe-4">
+                                     <i class="fa-solid fa-wind pe-1 fs-5"></i> 
+                                     <p>18km/h</p>
+                                  </div>
+                                  <div class="d-flex align-items-start pe-4">
+                                     <i class="fa-solid fa-gauge pe-1 fs-5"></i> 
+                                     <p>East</p>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="  col-md-4 text-center col2">
+                            <div class="title text-center d-flex justify-content-center align-items-baseline " style="    padding-top: .59rem !important;">
+                               <p >Wednesday                            </p>
+                            </div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" width="70px" height="70px" class="mt-4 mb-4">
+                            <p class="deg">34.5°c</p>
+                            <p class="deg2">22.8°c</p>
+                            <p class="status">Sunny</p>
+                         </div>
+                         <div class="  col-md-4 text-center col2" style="    background-color: #323544;">
+                            <div class="title text-center d-flex justify-content-center align-items-baseline " style="    padding-top: .59rem !important;">
+                               <p >Thursday                            </p>
+                            </div>
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" width="70px" height="70px" class="mt-4 mb-4">
+                            <p class="deg">33.9°c</p>
+                            <p class="deg2">22.3°c</p>
+                            <p class="status">Sunny</p>
+                         </div>
+                    </div>
+                 </div>
+                
+               
+        
+                <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <form  class="sub" style="position: relative; margin-bottom: 30px;">
+                                <input class="text" type="text" placeholder="Enter your email to subscribe...">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                        <div class="col-lg-3 col-md-offset-1">
+                            <div class="social-links">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="./assets/js/bootstrap.bundle.min.js"></script>
+            <script src="./assets/js/index.js"></script>
+        </body>
+        </html>
+        
+</body>
+</html>
