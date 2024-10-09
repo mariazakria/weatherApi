@@ -59,15 +59,15 @@ function displayData(data){
                              </p>
                              <p class="status">${data.current.condition.text}</p>
                              <div class="icons d-flex align-items-center pb-2">
-                                <div class="d-flex align-items-start pe-4">
+                                <div class="d-flex align-items-start pe-2">
                                    <i class="fa-solid fa-umbrella pe-1 fs-5"></i> 
                                    <p>20%</p>
                                 </div>
-                                <div class="d-flex align-items-start pe-4">
+                                <div class="d-flex align-items-start pe-2">
                                    <i class="fa-solid fa-wind pe-1 fs-5"></i> 
                                    <p>18km/h</p>
                                 </div>
-                                <div class="d-flex align-items-start pe-4">
+                                <div class="d-flex align-items-start pe-2">
                                    <i class="fa-solid fa-gauge pe-1 fs-5"></i> 
                                    <p>East</p>
                                 </div>
