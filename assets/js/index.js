@@ -45,7 +45,7 @@ function displayData(data){
     let weatherData = document.querySelector(".row")
     let details = ``;
     details += `
-     <div class=" col-md-4  col1">
+     <div class=" col-lg-4  col1">
                           <div class="title d-flex justify-content-between align-items-center px-3 pt-2">
                            <p class="m-0">${ new Date(data.forecast.forecastday[0].date).toLocaleString('en-us', { weekday: 'long' })}</p>
                            <p class="m-0">${ new Date(data.forecast.forecastday[0].date).getDate() } ${ new Date(data.forecast.forecastday[0].date).toLocaleString('en-us', { month: 'long' })}</p>
@@ -74,7 +74,7 @@ function displayData(data){
                              </div>
                           </div>
                        </div>
-                       <div class="  col-md-4 text-center col2">
+                       <div class="  col-lg-4 text-center col2">
                           <div class="title text-center d-flex justify-content-center align-items-baseline " style="    padding-top: .59rem !important;">
                                                        <p >${ new Date(data.forecast.forecastday[1].date).toLocaleString('en-us', { weekday: 'long' })}</p>
 
@@ -84,7 +84,7 @@ function displayData(data){
                           <p class="deg2">${data.forecast.forecastday[1].day.mintemp_c}°c</p>
                           <p class="status">${data.forecast.forecastday[1].day.condition.text}</p>
                        </div>
-                       <div class="  col-md-4 text-center col2" style="    background-color: #323544;">
+                       <div class="  col-lg-4 text-center col2" style="    background-color: #323544;">
                           <div class="title text-center d-flex justify-content-center align-items-baseline " style="    padding-top: .59rem !important;">
                                                        <p >${ new Date(data.forecast.forecastday[2].date).toLocaleString('en-us', { weekday: 'long' })}</p>
                           </div>

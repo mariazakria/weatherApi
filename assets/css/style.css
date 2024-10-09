@@ -120,20 +120,7 @@ input[type="submit"]{
     background: #009ad8 !important;
     color: white;
 }
-@media screen and (max-width:990px) {
-    ul{
-        display: none;
-    }
-    .toggle{
-        display: block;
-        color: #fff; 
-    }
-    .toggle:focus{
-        border-color: #009ad8;
-        color: #009ad8;
-        border-radius:50%;
-    }
-}
+
 .text{
     padding: 15px 100px 20px 20px;
     background: #1e202b;
@@ -183,7 +170,6 @@ input[type="submit"]{
 .col1{
     background-color: #323544;
     color: white;
-    border-top-left-radius: 5%;
     
     
 }

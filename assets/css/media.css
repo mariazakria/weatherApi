@@ -1,0 +1,14 @@
+@media screen and (max-width:990px) {
+    ul{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        color: #fff; 
+    }
+    .toggle:focus{
+        border-color: #009ad8;
+        color: #009ad8;
+        border-radius:50%;
+    }
+}
