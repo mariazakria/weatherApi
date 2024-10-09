@@ -73,7 +73,7 @@ function displayData(data){
                              <p class="country">${data.location.name}</p>
                              <p class="d-flex align-items-end">
                                 <span>${data.current.temp_c}°c</span>
-                                <img src="${data.current.condition.icon}" alt="" class="ms-4">
+                                <img src="${data.current.condition.icon}" alt="">
                              </p>
                              <p class="status">${data.current.condition.text}</p>
                              <div class="icons d-flex align-items-center pb-2">
