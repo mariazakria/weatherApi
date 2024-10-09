@@ -40,6 +40,25 @@ inputFind.addEventListener("keypress", async function(event){
    
 
 })
+btnFind.addEventListener("click", async function(){
+   
+    let city = inputFind.value.toUpperCase();
+    if(city){
+        try{
+            
+            let data = await getData(city);
+            displayData(data); 
+            
+        }
+        catch{
+            console.log("error❌")
+        }
+    }else {
+        console.log("Please enter a city name");
+    }
+   
+
+})
 
 function displayData(data){
     let weatherData = document.querySelector(".row")
