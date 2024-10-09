@@ -7,7 +7,6 @@ let apiKey = 'edd467d645fd4ab2883230708240410';
 async function getData(city) {
     let result = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`);
     let data = await result.json();   
-    console.log(data);
     return data;
 }
 // dh default lma elpage t3ml refresh
