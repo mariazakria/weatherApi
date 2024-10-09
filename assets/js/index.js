@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     displayData(data);
 });
 
-// 3shan hmn3 y3ml refresh lma a3ml enter
+/* // 3shan hmn3 y3ml refresh lma a3ml enter
 inputFind.addEventListener("keypress", async function(event){
     // lw dost enter my3mlsh refresh
     if(event.key === "Enter"){
@@ -39,7 +39,7 @@ inputFind.addEventListener("keypress", async function(event){
     }
    
 
-})
+}) */
 btnFind.addEventListener("click", async function(){
    
     let city = inputFind.value.toUpperCase();
