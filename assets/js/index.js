@@ -2,7 +2,7 @@ let mobileNav = document.querySelector(".mobile-nav");
 let toggleBtn = document.querySelector(".toggle");
 let btnFind = document.querySelector("#btnFind");
 let inputFind = document.querySelector("#inputFind")
-let apiKey = 'edd467d645fd4ab2883230708240410'; 
+let apiKey = 'ffcf0e5539474e6aa5b195946241110'; 
 
 async function getData(city) {
     let result = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`);
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     displayData(data);
 });
 
-/* // 3shan hmn3 y3ml refresh lma a3ml enter
+// 3shan hmn3 y3ml refresh lma a3ml enter
 inputFind.addEventListener("keypress", async function(event){
     // lw dost enter my3mlsh refresh
     if(event.key === "Enter"){
@@ -38,7 +38,7 @@ inputFind.addEventListener("keypress", async function(event){
     }
    
 
-}) */
+})
 btnFind.addEventListener("click", async function(){
    
     let city = inputFind.value.toUpperCase();
